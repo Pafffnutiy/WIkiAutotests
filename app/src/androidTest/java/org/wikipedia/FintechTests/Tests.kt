@@ -83,8 +83,47 @@ class Tests {
         MainNavTab().clickMore()
         BottomSheet().clickLogIn()
         CreateAnAccountScreen().fillForm()
+        RootScreen().closeKeyboard()
         CreateAnAccountScreen().clickNext()
         CreateAnAccountScreen().checkRedHeader()
         CreateAnAccountScreen().checkRedHintVisible()
     }
+
+    @Test
+    @AllureId("6")
+    @DisplayName("Проверка добавления статьи в избранное")
+    fun isStarred() {
+        MainScreen().searchArticle()
+        Thread.sleep(3000)
+        SearchScreen().clickOnArticle()
+        ArticleScreen().clickSave()
+        ArticleScreen().clickAddToList()
+        ArticleScreen().writeListName()
+        ArticleScreen().clickOkButton()
+        for(cnt in 1..3) RootScreen().clickBackButton()
+        MainNavTab().clickSaved()
+        SavedArticlesScreen().clickOnList()
+        ListOfArticlesScreen().checkTitleName()
+    }
+
+    @Test
+    @AllureId("7")
+    @DisplayName("Проверка удаления статьи из избранного")
+    fun isDeleted() {
+        MainScreen().searchArticle()
+        Thread.sleep(3000)
+        SearchScreen().clickOnArticle()
+        ArticleScreen().clickSave()
+        ArticleScreen().clickAddToList()
+        ArticleScreen().writeListName()
+        ArticleScreen().clickOkButton()
+        for(cnt in 1..3) RootScreen().clickBackButton()
+        MainNavTab().clickSaved()
+        SavedArticlesScreen().clickOnList()
+        ListOfArticlesScreen().longClickOnArticle()
+        ListOfArticlesScreen().scrollDown()
+        ListOfArticlesScreen().deleteItem()
+        ListOfArticlesScreen().checkAlert()
+    }
+
 }

@@ -22,7 +22,6 @@ class CreateAnAccountScreen {
         fillUsernameField()
         fillPasswordField()
         fillRepeatPasswordField()
-        closeKeyboard()
     }
 
     private fun fillUsernameField() {
@@ -154,12 +153,5 @@ class CreateAnAccountScreen {
                 return expectedColor == factColor
             }
         }
-    }
-
-
-    private fun closeKeyboard() {
-        onView(
-            isRoot()
-        ).perform((closeSoftKeyboard()))
     }
 }
