@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.michael-rapp:chrome-like-tab-switcher:0.4.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/caab9b58022a3c4c7605a1634f6f1915/transformed/jetified-chrome-like-tab-switcher-0.4.6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/caab9b58022a3c4c7605a1634f6f1915/transformed/jetified-chrome-like-tab-switcher-0.4.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/caab9b58022a3c4c7605a1634f6f1915/transformed/jetified-chrome-like-tab-switcher-0.4.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.michael-rapp/chrome-like-tab-switcher/0.4.6/7b900c9064e772ae063d449a3bf634b13194de25/chrome-like-tab-switcher-0.4.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.michael-rapp/chrome-like-tab-switcher/0.4.6/3a354dfa7af80eb98b8a1a400429cbc4f34b5412/chrome-like-tab-switcher-0.4.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

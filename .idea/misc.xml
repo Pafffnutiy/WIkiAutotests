@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.14673913043478262" />
+        <entry key="../../.gradle/caches/transforms-3/4b69ca455cdd5a055c2a82d6731c9f5d/transformed/preference-1.2.0/res/layout/preference_material.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/animated_dice.xml" value="0.151" />
+        <entry key="app/src/main/res/drawable/appshortcut_ic_continue_reading.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/appshortcut_ic_random.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/button_shape_add_reading_list.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_require_login_header.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.29197845458984373" />
+        <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.9919354838709677" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_notifications_filters.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_page.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_reset_password.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_single_fragment.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_suggested_edits_feed_card_image_tags.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_suggested_edits_tags_onboarding.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/activity_tabs.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/dialog_add_to_reading_list.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/dialog_categories.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/dialog_text_input.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/dialog_theme_chooser.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/dialog_undo_edit.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/dialog_watchlist_expiry.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/inflate_login_and_account_creation_footer.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/view_preference_logout.xml" value="0.6223434448242187" />
+        <entry key="app/src/main/res/layout/view_wiki_error.xml" value="0.15625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

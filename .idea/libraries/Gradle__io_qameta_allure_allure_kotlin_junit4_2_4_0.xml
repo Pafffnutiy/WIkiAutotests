@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.qameta.allure:allure-kotlin-junit4:2.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-kotlin-junit4/2.4.0/b2085b2a24897088b387d718d1a94aea63cc8117/allure-kotlin-junit4-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-kotlin-junit4/2.4.0/cae5db69e60c8419d32ce6f95924bbc1aad7fa80/allure-kotlin-junit4-2.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-kotlin-junit4/2.4.0/291a256eaf0b66f3f2215a2d7fc3068a53aabf37/allure-kotlin-junit4-2.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: io.qameta.allure:allure-kotlin-android:2.4.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8831343a9e66cef449c83c4cd67dd3b2/transformed/jetified-allure-kotlin-android-2.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ba58fb980d86073268a22c557d2d9ae7/transformed/jetified-allure-kotlin-android-2.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/15245ecdf91bb7687f81b464505e115f/transformed/jetified-allure-kotlin-android-2.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/15245ecdf91bb7687f81b464505e115f/transformed/jetified-allure-kotlin-android-2.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/15245ecdf91bb7687f81b464505e115f/transformed/jetified-allure-kotlin-android-2.4.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-kotlin-android/2.4.0/150eb8df55c1dacda99492bf4aff323401611259/allure-kotlin-android-2.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-kotlin-android/2.4.0/150eb8df55c1dacda99492bf4aff323401611259/allure-kotlin-android-2.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
