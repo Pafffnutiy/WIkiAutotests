@@ -1,5 +1,6 @@
 Написаны автотесты для всех кейсов
 Тесты находятся по пути: [app/src/androidTest/java/rg/wikipedia/FintechTests](https://github.com/Pafffnutiy/WIkiAutotests/tree/main/app/src/androidTest/java/org/wikipedia/FintechTests)
+
 Они были проверены на следующих эмуляторах:
 1. Pixel 5 API 29
 2. Pixel 2 API 26
