@@ -20,13 +20,13 @@ class BottomSheet {
     }
 
     fun clickSetting() {
-        step("Нажимаем на \"Войти / Присоединиться\"") {
+        step("Нажимаем на \"Настройки\"") {
             onView(allOf(withId(R.id.main_drawer_settings_container), isDisplayed())).perform(click())
         }
     }
 
     fun clickDonate() {
-        step("Нажимаем на \"Войти / Присоединиться\"") {
+        step("Нажимаем на \"Пожертвовать\"") {
             onView(allOf(withId(R.id.main_drawer_donate_container), isDisplayed())).perform(click())
         }
     }

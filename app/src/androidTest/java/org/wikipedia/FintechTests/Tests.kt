@@ -38,7 +38,7 @@ class Tests {
     @DisplayName("Проверка перехода в браузер")
     fun zmoreToBrowser(){
         MainNavTab().clickMore()
-        //BottomSheet().clickDonate()
+        BottomSheet().clickDonate()
         BottomSheet().checkToBrowser()
     }
 
@@ -84,11 +84,7 @@ class Tests {
         BottomSheet().clickLogIn()
         CreateAnAccountScreen().fillForm()
         CreateAnAccountScreen().clickNext()
-        //CreateAnAccountScreen().checkRedHeader()
+        CreateAnAccountScreen().checkRedHeader()
         CreateAnAccountScreen().checkRedHintVisible()
-        //Thread.sleep(10000)
-
     }
-
-
 }
