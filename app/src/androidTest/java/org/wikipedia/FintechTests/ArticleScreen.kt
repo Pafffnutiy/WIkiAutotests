@@ -18,12 +18,7 @@ class ArticleScreen {
 
     fun clickAddToList() {
         step("Нажимаем в диалоговом окне \"Добавить в список\"") {
-            onView(
-                anyOf(
-                    withText("Добавить в список"),
-                    withText("ADD TO LIST")
-                )
-            ).perform(click())
+            onView(withText(R.string.reading_list_add_to_list_button)).perform(click())
         }
     }
 
@@ -42,10 +37,7 @@ class ArticleScreen {
         step("Нажимаем ОК") {
             onView(
                 allOf(
-                    anyOf(
-                        withText("OK"),
-                        withText("ОК"),
-                    ),
+                    withText(R.string.reading_list_split_dialog_ok_button_text),
                     isDisplayed()
                 )
             ).perform(click())

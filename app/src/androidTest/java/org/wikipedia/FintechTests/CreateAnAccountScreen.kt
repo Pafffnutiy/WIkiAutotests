@@ -28,10 +28,7 @@ class CreateAnAccountScreen {
         step("Заполняем поле имени") {
             onView(
                 allOf(
-                    anyOf(
-                        withHint("Имя участника"),
-                        withHint("Username")
-                    ),
+                    withHint(R.string.create_account_username_hint),
                     isDisplayed()
                 )
             ).perform(click(), typeText(USERNAME))
@@ -45,10 +42,7 @@ class CreateAnAccountScreen {
         step("Заполняем поле пароля") {
             onView(
                 allOf(
-                    anyOf(
-                        withHint("Password"),
-                        withHint("Пароль")
-                    ),
+                    withHint(R.string.account_creation_password_hint),
                     isDisplayed()
                 )
             ).perform(click(), typeText(PASSWORD))
@@ -59,10 +53,7 @@ class CreateAnAccountScreen {
         step("Заполняем поле повтора пароля") {
             onView(
                 allOf(
-                    anyOf(
-                        withHint("Repeat password"),
-                        withHint("Повторите пароль")
-                    ),
+                    withHint(R.string.create_account_password_repeat_hint),
                     isDisplayed()
                 )
             ).perform(click(), typeText(PASSWORD))
@@ -84,10 +75,7 @@ class CreateAnAccountScreen {
         step("Проверяем что отображается введенный пароль") {
             onView(
                 allOf(
-                    anyOf(
-                        withHint("Password"),
-                        withHint("Пароль")
-                    ),
+                    withHint(R.string.account_creation_password_hint),
                     isDisplayed()
                 )
             ).check(matches(not(isPasswordHidden())))
@@ -98,10 +86,7 @@ class CreateAnAccountScreen {
         step("Проверяем что отображается введенный пароль") {
             onView(
                 allOf(
-                    anyOf(
-                        withHint("Password"),
-                        withHint("Пароль")
-                    ),
+                    withHint(R.string.account_creation_password_hint),
                     isDisplayed()
                 )
             ).check(matches(isPasswordHidden()))

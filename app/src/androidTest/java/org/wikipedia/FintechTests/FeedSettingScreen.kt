@@ -16,8 +16,8 @@ class FeedSettingScreen {
         isCheckedBecauseYouRead()
         isCheckedInTheNews()
         isCheckedOnThisDay()
-        isCheckedRandomizer()
         scrollDown()
+        isCheckedRandomizer()
         isCheckedTodayOnWiki()
     }
 
@@ -25,17 +25,14 @@ class FeedSettingScreen {
         onView(withId(R.id.content_types_recycler)).perform(ScrollToBottomAction())
     }
 
-    private fun isCheckedSth(ru: String, en: String) {
-        step("Проверяем включен ли \"$ru\"") {
+    private fun isCheckedSth(text: Int) {
+        step("Проверяем включен ли \"$text\"") {
             onView(
                 allOf(
                     withId(R.id.feed_content_type_checkbox),
                     hasSibling(
                         hasDescendant(
-                            anyOf(
-                                withText(ru),
-                                withText(en)
-                            )
+                            withText(text)
                         )
                     ),
                 )
@@ -44,34 +41,34 @@ class FeedSettingScreen {
     }
 
     private fun isCheckedFeaturedArticle() {
-        isCheckedSth("Избранная статья","Featured article")
+        isCheckedSth(R.string.view_featured_article_card_title)
     }
 
     private fun isCheckedTopRead() {
-        isCheckedSth("Самое читаемое","Top read")
+        isCheckedSth(R.string.view_top_read_card_title)
     }
 
     private fun isCheckedPictureOfTheDay() {
-        isCheckedSth("Изображение дня","Picture of the day")
+        isCheckedSth(R.string.view_featured_image_card_title)
     }
 
     private fun isCheckedBecauseYouRead() {
-        isCheckedSth("На основе прочитанного","Because you read")
+        isCheckedSth(R.string.view_because_you_read_card_title)
     }
 
     private fun isCheckedInTheNews() {
-        isCheckedSth("В новостях","In the news")
+        isCheckedSth(R.string.view_card_news_title)
     }
 
     private fun isCheckedOnThisDay() {
-        isCheckedSth("В этот день","On this day")
+        isCheckedSth(R.string.on_this_day_card_title)
     }
 
     private fun isCheckedRandomizer() {
-        isCheckedSth("Рандомизатор","Randomizer")
+        isCheckedSth(R.string.view_random_card_title)
     }
 
     private fun isCheckedTodayOnWiki() {
-        isCheckedSth("Сегодня в Википедии", "Today on Wikipedia")
+        isCheckedSth(R.string.view_main_page_card_title)
     }
 }

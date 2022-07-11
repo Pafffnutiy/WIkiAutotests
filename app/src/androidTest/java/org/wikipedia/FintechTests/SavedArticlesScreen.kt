@@ -4,8 +4,8 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.matcher.ViewMatchers.*
 import io.qameta.allure.kotlin.Allure.step
-import org.hamcrest.Matchers.allOf
-import org.hamcrest.Matchers.endsWith
+import org.hamcrest.Matchers.*
+import org.wikipedia.R
 
 class SavedArticlesScreen {
     fun clickOnList() {
@@ -17,5 +17,9 @@ class SavedArticlesScreen {
                 )
             ).perform(click())
         }
+    }
+
+    fun clickNotNow() {
+        onView(withText(R.string.reading_lists_ignore_button)).perform(click())
     }
 }

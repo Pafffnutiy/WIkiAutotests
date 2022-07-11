@@ -11,23 +11,19 @@ import org.wikipedia.R
 class SettingScreen {
     fun clickFeedSettings() {
         step("Нажимаем на кнопку \"Настройка ленты\"") {
-            onView(allOf(
-                anyOf(
-                    withText("Исследователь ленту"),
-                    withText("Explore Feed")
-                ),
-                isDisplayed())).
-            perform(click())
+            onView(
+                allOf(
+                    withText(R.string.preference_title_customize_explore_feed),
+                    isDisplayed()
+                )
+            ).perform(click())
         }
     }
 
     fun clickAbout() {
         step("Нажимаем на \"О приложении «Википедия»\""){
             onView(
-                anyOf(
-                    withText("О приложении «Википедия»"),
-                    withText("About the Wikipedia app")
-                )
+                withText(R.string.about_description)
             ).perform(click())
         }
     }

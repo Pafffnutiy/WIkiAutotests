@@ -5,7 +5,7 @@ import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import io.qameta.allure.kotlin.Allure.step
-import org.hamcrest.Matchers.anyOf
+import org.hamcrest.Matchers.allOf
 import org.wikipedia.R
 
 class ListOfArticlesScreen {
@@ -22,26 +22,21 @@ class ListOfArticlesScreen {
     }
 
     fun scrollDown() {
-        onView(withId(R.id.reading_list_item_share)).perform(swipeUp(), swipeUp())
+        onView(withId(R.id.reading_list_item_add_to_other)).perform(swipeUp(), swipeUp())
     }
 
     fun deleteItem() {
         step("Выбираем кнопку удалить") {
-            onView(
-                anyOf(
-                    withText("Remove from Name of list"),
-                    withText("Удалить из Name of list")
-                )
-            ).perform(click())
+            onView(withId(R.id.reading_list_item_remove)/*deleteMatcher()*/).perform(click())
         }
     }
 
     fun checkAlert() {
         step("Проверяем, что появляется уведомление о том, что список удален") {
             onView(
-                anyOf(
-                    withText("Российская премьер-лига удалена из Name of list"),
-                    withText("Российская премьер-лига removed from Name of list")
+                allOf(
+                    withId(R.id.snackbar_text),
+                    isDisplayed()
                 )
             ).check(matches(isDisplayed()))
         }

@@ -102,6 +102,7 @@ class Tests {
         ArticleScreen().clickOkButton()
         for(cnt in 1..3) RootScreen().clickBackButton()
         MainNavTab().clickSaved()
+        SavedArticlesScreen().clickNotNow()
         SavedArticlesScreen().clickOnList()
         ListOfArticlesScreen().checkTitleName()
     }
@@ -119,10 +120,12 @@ class Tests {
         ArticleScreen().clickOkButton()
         for(cnt in 1..3) RootScreen().clickBackButton()
         MainNavTab().clickSaved()
+        SavedArticlesScreen().clickNotNow()
         SavedArticlesScreen().clickOnList()
         ListOfArticlesScreen().longClickOnArticle()
         ListOfArticlesScreen().scrollDown()
         ListOfArticlesScreen().deleteItem()
+        //Thread.sleep(5000)
         ListOfArticlesScreen().checkAlert()
     }
 

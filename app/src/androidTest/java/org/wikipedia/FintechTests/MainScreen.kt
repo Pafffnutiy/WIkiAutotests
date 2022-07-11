@@ -18,10 +18,7 @@ class MainScreen {
             clickOnRu()
 
             onView(
-                anyOf(
-                    withHint("Поиск по Википедии"),
-                    withHint("Search Wikipedia")
-                )
+                withHint(R.string.search_hint)
             ).perform(replaceText(article))
         }
     }

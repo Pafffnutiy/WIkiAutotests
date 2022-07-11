@@ -17,26 +17,21 @@ class AboutScreen {
     }
 
     fun checkContributors() {
-        checkSth(R.id.about_contributors,"Авторы","Contributors")
+        checkSth(R.id.about_contributors,R.string.about_contributors_heading)
     }
 
     fun checkTranslators() {
-        checkSth(R.id.about_translators,"Переводчики","Translators")
+        checkSth(R.id.about_translators,R.string.about_translators_heading)
     }
 
     fun checkLicense() {
-        checkSth(R.id.about_app_license,"Лицензия","License")
+        checkSth(R.id.about_app_license,R.string.about_app_license_heading)
     }
 
-    fun checkSth(identifier: Int, ru: String, en: String) {
-        step("Проверяем, что на экране есть блок \"$ru\"") {
+    fun checkSth(identifier: Int, text: Int) {
+        step("Проверяем, что на экране есть блок \"$text\"") {
             onView(withId(identifier)).check(matches(isDisplayed()))
-            onView(
-                anyOf(
-                    withText(ru),
-                    withText(en)
-                )
-            ).check(matches(isDisplayed()))
+            onView(withText(text)).check(matches(isDisplayed()))
         }
     }
 }
